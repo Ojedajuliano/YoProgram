@@ -1,0 +1,27 @@
+<div class="edit-container">
+<button type="button" class="btn btn-success" (click)="openVerticallyCentered(content)"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+  <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+  <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+</svg></button>
+</div>
+<ng-template #content let-modal>
+	<div class="modal-header">
+		<h4 class="modal-title">Edicion de Skills</h4>
+		<button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+	</div>
+	<div class="modal-body">
+		<div class="form-floating mb-3">
+      <input class="form-control" placeholder="Leave a comment here" id="floatingTextarea2Disabled" style="height: 100px" enable name="title" [(ngModel)]="workDataIn.title" >
+      <label for="floatingTextarea2Disabled">Habilidad</label>
+    </div>
+    
+    <div>
+      <label for="customRange1" class="form-label">Nivel de habilidad </label>
+      <input type="range" class="form-range" id="customRange1" name="Skill" [(ngModel)]="workDataIn.Skill" >
+    </div>
+	</div>
+	<div class="modal-footer">
+		<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+    <button type="button" class="btn btn-primary">Save changes</button>
+	</div>
+</ng-template>

@@ -1,0 +1,35 @@
+.about-container{
+    position: relative;
+    margin: 0 50px;
+    padding: 1%;
+    font-family: 'Vina Sans', cursive;
+    -webkit-text-stroke: 0,5px gray;
+    color: white
+}
+.imgface{
+    border-radius: 50%;
+    width: 15%;
+    position: absolute;
+    top: -6vw;
+    right: 8%;
+}
+h1{
+    text-shadow: 3px 3px 5px black;
+}
+.name{
+    font-size: 3rem ;
+}
+.name{
+    position: relative;
+    top: 100px;
+
+}
+.section-title{
+    text-shadow: 3px 3px 5px black;
+    font-size: 3rem;
+}
+.about-container{
+    text-shadow: 2px 2px 4px black;
+    font-size: 25px;
+}
+

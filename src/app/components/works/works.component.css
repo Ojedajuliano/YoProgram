@@ -1,0 +1,12 @@
+.work-container{
+    position: relative;
+    margin: 0 50px;
+    padding: 1%;
+    font-family: 'Vina Sans', cursive;
+    -webkit-text-stroke: 0,5px gray;
+    color: white;
+    text-shadow: 3px 3px 5px black;
+}
+.section-title{
+    font-size: 3rem;
+}
